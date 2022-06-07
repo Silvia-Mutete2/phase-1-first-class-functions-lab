@@ -4,7 +4,7 @@
   "description": "First-Class Functions Lab for Learn.co",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json --bail"
   },
   "repository": {
     "type": "git",
@@ -33,5 +33,8 @@
     "mocha": "5.2.0",
     "mocha-jsdom": "~1.1.0",
     "mocha-multi": "1.0.1"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.3"
   }
 }
